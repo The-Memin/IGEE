@@ -17,6 +17,12 @@ div{
     margin-bottom:10px
 }
         </style>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+       <link rel="stylesheet" href="leaflet-routing-machine.css" />
+       <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
         <h1>
@@ -67,9 +73,14 @@ div{
             </div>
         </div>
         <div style="width:90%;margin-left:5%;background-color:#cafbb6;border:5px solid #4285f4;border-radius:25px/25px">
-            <div style="margin:5%">
-                <!--AQUI VA EL MAPA-->
-            </div>
+            <div id="myMap" style="height: 50em"></div>
         </div>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="leaflet-routing-machine.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src = "mainr.js"></script>
     </body>
 </html>
